@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+.contain-wraper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.side-menu {
+  width: 300px;
+  height: 100%;
+  background: #ffffff;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.side-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+.side-menu-hide-btn {
+  position: absolute;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  left: 0px;
+  top: 50%;
+  transform: translate(-50% -50%);
+  outline: none;
+  border: none;
+  font-size: 24px;
+  width: 30px;
+  height: 60px;
+  background: #ececec;
+  color: rgb(173, 173, 173);
+  cursor: pointer;
+  transition: all 700ms ease-in-out ;
+}
+.side-menu-hide-btn:hover{
+  background: gray;
+  color: white;
+}
+
+.side-menu-nav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+}
+.side-menu-second-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    box-shadow: 3px -4px 10px -3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 3px -4px 10px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px -4px 10px -3px rgba(0,0,0,0.5);
+}
+.side-menu-second-nav > button{
+    text-align: center;
+    position: relative;
+    border: none;
+    background: none;
+    width: 80px;
+    height: 100%;
+    cursor: pointer;
+    font-size: 12px;
+}
+.styled-button::before{
+    content: "";
+    width: 70px;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    transform: translate(-50% -50%);
+    border-radius: 4px;
+}
+
+.outlet {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 3px -4px 10px -3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 3px -4px 10px -3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 3px -4px 10px -3px rgba(0,0,0,0.5);
+  z-index:10 ;
+
+}
+.output{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
