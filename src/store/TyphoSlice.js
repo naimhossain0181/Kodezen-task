@@ -4,7 +4,7 @@ const Typhography=createSlice({
     name:"Typho",
     initialState:{
             edit:{
-                family:'roboto',
+                family:'Roboto',
                 size:24,
                 weight:100,
                 transform:"none",
@@ -18,7 +18,7 @@ const Typhography=createSlice({
     reducers:{
         reload:(state,action)=>{
             state.edit={
-                family:'roboto',
+                family:'Roboto',
                 size:24,
                 weight:100,
                 transform:"none",

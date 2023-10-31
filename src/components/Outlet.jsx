@@ -9,7 +9,7 @@ const Outlet = ({ sideWidth, setSideWidth }) => {
             <button className='side-menu-hide-btn' onClick={() => setSideWidth(!sideWidth)}>{sideWidth ? <BsFillCaretRightFill /> : <BsFillCaretLeftFill />}</button>
             <div className='output'>
                 <h1 style={{
-                    fontSize: data.size, fontFamily: data.family, fontWeight: data.weight, transform: data.transform, textDecoration: data.decoration, lineHeight: data.lineHeight,
+                    fontSize: data.size, fontFamily:data.family, fontWeight: data.weight, transform: data.transform, textDecoration: data.decoration, lineHeight: data.lineHeight,
                     letterSpacing: data.letterSpacing, wordSpacing: data.wordSpacing
                 }}>Kodezen IT</h1>
                 <p>naim1997dec1@gmail.com

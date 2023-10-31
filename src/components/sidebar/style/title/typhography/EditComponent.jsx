@@ -12,7 +12,7 @@ const EditComponent = () => {
         <div className='typho-wraper'>
             <div className='font container'>
                 <span>Family</span>
-                <select name="familly" id="familly" onChange={(e)=>dispatch(addFamily(e.target.value))}>
+                <select name="family" id="family" value={data.family} onChange={(e)=>dispatch(addFamily(e.target.value))}>
                     <option value="Roboto">Roboto</option>
                     <option value="sans-serif">sans-serif</option>
                     <option value="cursive">cursive</option>
